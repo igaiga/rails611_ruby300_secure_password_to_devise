@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  has_secure_password
+  devise :database_authenticatable, :registerable, stretches: 12
 end
